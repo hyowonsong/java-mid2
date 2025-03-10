@@ -11,6 +11,7 @@ public class AnimalMain1 {
         Dog dog = new Dog("멍멍이", 100);
         Cat cat = new Cat("냐옹이", 50);
 
+        // Box 제네릭 클래스에 각각의 타입에 맞는 동물을 보관하고 꺼낸다.
         Box<Dog> dogBox = new Box<>();
         dogBox.set(dog);
         Dog findDog = dogBox.get();

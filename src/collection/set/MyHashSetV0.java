@@ -33,8 +33,7 @@ public class MyHashSetV0 {
     @Override
     public String toString() {
         return "MyHashSetV0{" +
-                "elementData=" + Arrays.toString(Arrays.copyOf(elementData,
-                size)) +
+                "elementData=" + Arrays.toString(Arrays.copyOf(elementData, size)) +
                 ", size=" + size +
                 '}';
     }

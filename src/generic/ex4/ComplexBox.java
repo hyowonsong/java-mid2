@@ -9,6 +9,7 @@ public class ComplexBox<T extends Animal> {
     public void set(T animal) {
         this.animal = animal;
     }
+
     public <T> T printAndReturn(T t) {
         System.out.println("animal.className: " + animal.getClass().getName());
         System.out.println("t.className: " + t.getClass().getName());

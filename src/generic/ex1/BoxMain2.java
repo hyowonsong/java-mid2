@@ -5,6 +5,7 @@ public class BoxMain2 {
     public static void main(String[] args) {
         ObjectBox integerBox = new ObjectBox();
         integerBox.set(10);
+        // 자식은 부모를 담을 수 없다. Integer = Object 는 성립하지 않는다.
         Integer integer = (Integer) integerBox.get(); //Object -> Integer 캐스팅
         System.out.println("integer = " + integer);
 
@@ -14,6 +15,7 @@ public class BoxMain2 {
         System.out.println("str = " + str);
         //잘못된 타입의 인수 전달시
         integerBox.set("문자100");
+
         Integer result = (Integer) integerBox.get(); // String -> Integer 캐스팅 예외
         System.out.println("result = " + result);
     }

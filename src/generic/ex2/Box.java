@@ -1,12 +1,12 @@
 package generic.ex2;
 
-public class Box<T>{
-    private T value;
+public class Box<Animal>{
+    private Animal value;
 
-    public void set(T value) {
+    public void set(Animal value) {
         this.value = value;
     }
-    public T get() {
+    public Animal get() {
         return value;
     }
 }
